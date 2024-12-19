@@ -19,7 +19,7 @@ const Contact = () => {
     const container = document.querySelector('.contact_section');
     container.innerHTML = `
     <article>
-        <img id="contectImg" src="/DALL2024.png" alt="office"/>
+        <img id="contectImg" src="https://github.com/SungminJeong/proyecto_final/blob/main/public/DALL2024.png?raw=true" alt="office"/>
     </article>
     <article id="contactForm">
         <p>Contact Us</p>
