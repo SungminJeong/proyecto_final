@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #333333;
+    --description-color: #666666;
+    --description-background-color: #F4F5F7;
+    --secondary-color: #c5997b/*#B88E2F*/;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #FFF3E3;
+    --exprice-color: #B0B0B0;
+    --inspiration-background-color: #FCF8F3;
+    --footer-font-color: #9F9F9F;
+    --footer-line-color: #D9D9D9;
+    --small-padding: 20px;
+    --large-padding: 40px;
+    --trashcan: #ff0033;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+h2, h3, h4, h5{
+    color: var(--primary-color);
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    color: var(--description-color);
+}
+
+main{
+    /*
+    min-height: 80vh;
+    */
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-background-color);
+}
+
+.ourproducts{
+    width: 100%;
+}

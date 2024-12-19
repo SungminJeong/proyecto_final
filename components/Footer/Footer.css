@@ -1,0 +1,113 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer{
+    width: 100vw;
+    border-top: 1px solid var(--footer-line-color);
+    padding: 1px 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+
+
+.company > h1 {
+    padding: 40px 0;
+    font-size: 50px;
+}
+
+.company > p{
+    /*width: 300px;*/
+    width: 80%;
+    color: var(--footer-font-color);
+}
+
+.footer_list > p{
+    padding: 20px 0;
+    justify-content: left;
+    color: var(--footer-font-color);
+    font-size: 20px;
+}
+
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer_list > li {
+    padding: 20px 0;
+}
+
+
+
+.email > input {
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 180px;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.email > input::placeholder{
+    color: var(--footer-font-color);
+}
+
+.subs_btn{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    text-transform: uppercase;
+    font-weight: medium;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.realFooter{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .footer_list{
+        align-items: center;
+        padding: 0;
+    }
+
+
+    
+    .footer > form {
+        padding: 0;
+    }
+
+    .company{
+        text-align: center;
+    }
+    .company > p {
+        margin: auto;
+    }
+
+    .email{
+        text-align: center;
+    }
+
+    .realFooter{
+        margin-top: 30px;
+    }
+}

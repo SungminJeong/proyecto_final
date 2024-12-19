@@ -1,0 +1,120 @@
+.header_main {
+    /*background-image: url(https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);*/
+    /*background-image: url(https://github.com/SungminJeong/entrega-Proyecto-1/blob/main/entrega_Proyecto1/assets/scandinavian-interior-mockup-wall-decal-background%201.png?raw=true);*/
+    background-image: url(/public/curology-6CJg-fOTYs4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 45em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.box{
+    background-color: var(--secondary-background-color);
+    width: 45%;
+    margin-right: var(--large-padding);
+    display: flex;
+}
+
+.box > h1 {
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+
+.new_arrival{
+    padding: 40px;
+}
+
+.new_arrival > h1{
+    width: 80%;
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+
+.new_arrival > p {
+    color: var(--primary-color);
+}
+
+.newarrival {
+    color: var(--primary-color);
+    letter-spacing: 3px;
+}
+
+.buy_now_btn{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+
+.buy_now_btn:hover{
+    transform: scale(1.1);
+}
+
+.browsetherange{
+    margin-bottom: var(--large-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.browsetherange_title{
+    text-align: center;
+    margin: var(--large-padding) 0;
+}
+
+.space_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.space_list > li > a > img {
+    width: 350px;
+    border-radius: 10px;
+    transition: 0.5s;
+    height: 450px;
+    box-shadow: 0 0 8px;
+}
+
+
+.space_list > li > a > h4 {
+    padding-top: 5px;
+}
+
+.space_list > li > a > img:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:605px){
+    .header_main{
+        justify-content: center;
+    }
+    .new_arrival > h1{
+        font-size: 30px;
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 80%;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width:390px){
+    .space_list > li > a > img{
+        width: 300px;
+    }
+}

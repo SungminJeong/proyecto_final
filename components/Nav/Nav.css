@@ -1,0 +1,144 @@
+nav{
+    display: flex;
+}
+
+.nav_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 30px;
+}
+
+
+.nav_menu > li > a{
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+
+.nav_menu > li > a:hover{
+    color: white;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.nav_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+}
+
+.hamActive{
+    display: block;
+}
+
+.hamActive > li{
+    padding: 10px 20px;
+    text-align: center
+}
+
+.hamActive > li > a:hover{
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cart:hover{
+    cursor: pointer;
+}
+.favorite:hover{
+    cursor: pointer;
+}
+
+.cart_modal{
+    display: none;
+    background-color: var(--inspiration-background-color);
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: absolute;
+    right: 0;
+    top: 64px;
+    z-index: 10000;
+    width: 400px;
+    min-height: 650px;
+    padding:  0;
+    animation: slide 0.7s ease-out; 
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes slide{
+    from{
+        top:-500px;
+        opacity: 0;
+    }
+    to{
+        top:68px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideout{
+    from{
+        top:68px;
+        opacity: 1;
+    }
+    to{
+        top:-500px;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:581px){
+    .logo{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logo-title{
+        display: flex;  
+    }
+
+    #hamburger{
+        display: block;
+    }
+    #hamburger > img{
+        width: 40px;
+        height: 40px;
+    }
+    .nav_menu{
+        display: none;
+    }
+}
+@media screen and (min-width:582px){
+    .modal{
+        display: none;
+    }
+}
+
+@media screen and (max-width:420px){
+    .cart_modal{
+        width: 340px;
+    }
+}
